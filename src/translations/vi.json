@@ -1,0 +1,71 @@
+{
+    "Episode 1": "Bài 1",
+    "Hash Function" :"Hàm mã hóa",
+    "Des1":"Hàm băm giống như một dấu vân tay xác định của một phần dữ liệu tùy ý. Nó rất dễ tính toán nhưng rất khó để đảo ngược.",
+
+    "Episode 2": "Bài 2",
+    "Key Pair" :"Cặp chìa khóa",
+    "Des2":"Khóa cá nhân được sử dụng để lấy khóa công khai hoạt động như địa chỉ công khai của bạn. Sau đó, bạn có thể ký tin nhắn bằng khóa cá nhân của mình và bất kỳ ai khác có thể chứng minh bằng mật mã rằng cặp khóa của bạn đã ký tin nhắn.",
+
+    "Look Ahead": "Nhìn thẳng",
+    "Transactions" :"Giao dịch",
+    "Des3":"Sử dụng hàm băm và cặp khóa của chúng tôi, chúng tôi gửi và nhận tiền trên một blockchain. Tiền có thể lập trình phi tập trung FTW!",
+    
+    "Side Quest": "Nhiệm vụ phụ",
+    "Encryption" :"Mã hóa",
+    "Des4":"Mã hóa dữ liệu bằng khóa công khai, gửi dữ liệu đến mạng công cộng và giải mã bằng khóa riêng.",
+
+    "Episode 3": "Bài 3",
+    "Distributed Ledger" :"Sổ cái phân tán",
+    "Des5":"Chúng tôi khám phá các thuộc tính của sổ cái phân tán. Chúng ta có thể dễ dàng giải quyết các cuộc tấn công chơi lại, nhưng các cuộc tấn công chi tiêu gấp đôi lại là một câu chuyện khác ...",
+    
+    "Episode 4": "Bài 4",
+    "Blockchain" :"Chuỗi khối",
+    "Des7":"Chúng tôi sẽ sử dụng bằng chứng công việc để gây nhiễu trên băm để khai thác một khối giao dịch. Sau đó, chúng ta có thể tạo một chuỗi các khối này ...",
+
+    "Episode 6": "Bài 6",
+    "Smart Contracts" :"Hợp đồng thông minh",
+    "Des10":"Chúng tôi giới thiệu phát triển hợp đồng thông minh với Solidity!",
+
+    "Module": "Mô-đun",
+    "Wallet" :"Ví",
+    "Des11":"Chúng tôi xây dựng một mô-đun ví để giúp quản lý tài khoản dễ dàng hơn.",
+
+    "Episode 7": "Bài 7",
+    "Gas" :"Gas",
+    "Des12":"Chúng tôi khám phá giá gas và giới hạn gas cho các giao dịch trên Ethereum.",
+
+    "Meta Transactions" :"Giao dịch Meta",
+    "Des9":"Xem cách các tin nhắn đã ký có thể được khôi phục trong hợp đồng thông minh để có trải nghiệm người dùng tốt hơn và tham gia vào Ethereum.",
+
+    "Episode 5": "Bài 5",
+    "Des8":"Chúng tôi tạo ra các giao dịch và khám phá cách giá khí đốt khuyến khích các thợ đào bao gồm chúng tôi trong khối!",
+    
+    "Byzantine Generals" :"Byzantine Generals",
+    "Des6":"A distributed system will have a hard time reaching consensus. This classic computer science problem explores possible solutions.",
+
+    "Load" :"Tải lại",
+    "Watch":"Xem",
+
+    "View" :"Xem",
+    "Edit":"Chỉnh sửa",
+    "Scan":"Quét",
+    "Learn More":"Xem thêm",
+    "Collapse":"Thay đổi",
+    "Add Item [space bar]":"Thêm mục [phím cách]",
+    "Reorient [esc key]":"Định hướng lại [phím esc]",
+    "Draw":"Vẽ",
+    "Select [hold ctrl]":"Chọn [giữ ctrl]",
+    "Copy [ctrl+c]":"Sao chép [ctrl + c]",
+    "Paste [ctrl+v]":"Dán [ctrl + v]",
+    "Properties":"Đặc tính",
+    "Select All [ctrl+a]":"Chọn Tất cả [ctrl + a]",
+    "Delete Selected [delete key]":"Xóa [phím xóa] đã chọn",
+    "Playing":"Chạy",
+    "Fast Forwarding":"Chuyển nhanh",
+    "Save":"Lưu",
+    "About":"Thông tin",
+
+    "en": "Tiếng Anh",
+    "vi": "Tiếng Việt"
+}

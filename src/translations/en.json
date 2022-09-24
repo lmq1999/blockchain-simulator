@@ -1,0 +1,71 @@
+{
+    "Episode 1": "Episode 1",
+    "Hash Function" :"Hash Function",
+    "Des1":"A hash function is like a deterministic fingerprint of a piece of arbitrary data. It is very easy to compute but very hard to reverse.",
+
+    "Episode 2": "Episode 2",
+    "Key Pair" :"Key Pair",
+    "Des2":"A private key is used to derive a public key which acts as your public address. Then, you can sign messages with your private key and anyone else can cryptographically prove that your key pair signed the message.",
+    
+    "Look Ahead": "Look Ahead",
+    "Transactions" :"Transactions",
+    "Des3":"Using our hash function and key pair, we send and receive funds on a blockchain. Decentralized programmable money FTW!",
+    
+    "Side Quest": "Side Quest",
+    "Encryption" :"Encryption",
+    "Des4":"Encrypt data with a public key, send the data to a public network, and decrypt it with a private key.",
+
+    "Episode 3": "Episode 3",
+    "Distributed Ledger" :"Distributed Ledger",
+    "Des5":"We explore the properties of a distributed ledger. We can easily solve replay attacks, but double spend attacks are another story...",
+
+    "Episode 4": "Episode 4",
+    "Blockchain" :"Distributed Ledger",
+    "Des7":"We'll use proof-of-work to jam on a hash to mine a block of transactions. Then we can create a chain of these blocks...",
+
+    "Episode 6": "Episode 6",
+    "Smart Contracts" :"Smart Contracts",
+    "Des10":"We introduce smart contract development with Solidity!",
+
+    "Module": "Module",
+    "Wallet" :"Wallet",
+    "Des11":"We build a wallet module to make account management easier.",
+
+    "Episode 7": "Episode 7",
+    "Gas" :"Gas",
+    "Des12":"We explore gas prices and gas limits for transactions on Ethereum.",
+
+    "Meta Transactions" :"Meta Transactions",
+    "Des9":"A look at how signed messages can be recovered in a smart contract for better UX and onboarding into Ethereum.",
+
+    "Episode 5": "Episode 5",
+    "Des8":"We craft transactions and explore how gas prices incentivize miners to include us in the block!",
+    
+    "Byzantine Generals" :"Byzantine Generals",
+    "Des6":"A distributed system will have a hard time reaching consensus. This classic computer science problem explores possible solutions.",
+
+    "Load" :"Load",
+    "Watch":"Watch",
+
+    "View" :"View",
+    "Edit":"Edit",
+    "Scan":"Scan",
+    "Learn More":"Learn More",
+    "Collapse":"Collapse",
+    "Add Item [space bar]":"Add Item [space bar]",
+    "Reorient [esc key]":"Reorient [esc key]",
+    "Draw":"Draw",
+    "Select [hold ctrl]":"Select [hold ctrl]",
+    "Copy [ctrl+c]":"Copy [ctrl+c]",
+    "Paste [ctrl+v]":"Paste [ctrl+v]",
+    "Properties":"Properties",
+    "Select All [ctrl+a]":"Select All [ctrl+a]",
+    "Delete Selected [delete key]":"Delete Selected [delete key]",
+    "Playing":"Playing",
+    "Fast Forwarding":"Fast Forwarding",
+    "Save":"Save",
+    "About":"About",
+
+    "en": "English",
+    "vi": "Vietnamese"
+}
