@@ -1837,7 +1837,7 @@ function App() {
               height: barHeight,
               left: 0,
               bottom: 0,
-              width: 525,
+              width: 475,
               backgroundColor: "#DFDFDF",
             }}
           >
@@ -1979,7 +1979,7 @@ function App() {
                 </Tooltip>
               </span>
 
-              <span
+              {/* <span
                 style={{
                   margin: 5,
                   paddingLeft: 10,
@@ -2004,7 +2004,7 @@ function App() {
                     />
                   </svg>
                 </Tooltip>
-              </span>
+              </span> */}
 
               <span
                 style={{

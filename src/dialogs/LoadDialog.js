@@ -15,7 +15,7 @@ import {
   logout3Box,
   getSpace,
   getBox,
-  isFetching
+  isFetching,
 } from "../utils/3BoxManager";
 
 import Box from "3box";
@@ -29,11 +29,11 @@ var codec = require("json-url")("lzw");
 
 const useStyles = makeStyles({
   button: {
-    width: 200
-  }
+    width: 200,
+  },
 });
 
-const ThreeBoxIcon = props => {
+const ThreeBoxIcon = (props) => {
   return (
     <SvgIcon {...props} viewBox="0 0 290 289">
       <path
@@ -71,9 +71,7 @@ function LoadDialog(props) {
 
   React.useEffect(() => {
     console.log({
-      isLoggedIn: web3Modal.address
-        ? Box.isLoggedIn(web3Modal.address)
-        : "n/a"
+      isLoggedIn: web3Modal.address ? Box.isLoggedIn(web3Modal.address) : "n/a",
     });
 
     let space = getSpace();
@@ -141,7 +139,7 @@ function LoadDialog(props) {
     handleClose();
   };
 
-  const getJsonFromCompressed = compressedString =>
+  const getJsonFromCompressed = (compressedString) =>
     new Promise((resolve, reject) => {
       let loc = compressedString.indexOf("<string>");
       if (loc > 0) {
@@ -154,7 +152,7 @@ function LoadDialog(props) {
         );
       }
       console.log("decompress:", compressedString);
-      codec.decompress(compressedString).then(json => {
+      codec.decompress(compressedString).then((json) => {
         console.log("configure graph with:", json);
         if (json) {
           resolve(json);
@@ -162,7 +160,7 @@ function LoadDialog(props) {
       });
     });
 
-  const openFile = async file => {
+  const openFile = async (file) => {
     console.log("Opening FILE: ", file);
     let compressedString = file.data;
     let json = await getJsonFromCompressed(compressedString);
@@ -182,7 +180,7 @@ function LoadDialog(props) {
             border: "1px solid #777777",
             color: live ? "#00ff00" : "#0000ff",
             padding: 5,
-            cursor: "pointer"
+            cursor: "pointer",
           }}
         >
           <input
@@ -190,10 +188,10 @@ function LoadDialog(props) {
             type="file"
             name="file"
             value=""
-            onChange={e => {
+            onChange={(e) => {
               console.log("FILE", e.target.files[0]);
               var reader = new FileReader();
-              reader.onload = event => {
+              reader.onload = (event) => {
                 let compressedString = event.target.result;
                 //console.log("compressedString",compressedString)
                 let loc = compressedString.indexOf("<string>");
@@ -207,7 +205,7 @@ function LoadDialog(props) {
                   );
                 }
                 console.log("decompress:", compressedString);
-                codec.decompress(compressedString).then(json => {
+                codec.decompress(compressedString).then((json) => {
                   console.log("configure graph with:", json);
                   if (json) {
                     localStorage.setItem("litegraph", JSON.stringify(json));
@@ -259,7 +257,7 @@ function LoadDialog(props) {
                 </Tooltip>
               </Grid>
 
-              <Grid item style={{ width: 220 }}>
+              {/* <Grid item style={{ width: 220 }}>
                 <Tooltip title="Load from your 3Box space">
                   <Button
                     variant="contained"
@@ -297,8 +295,8 @@ function LoadDialog(props) {
                   >
                     Load from 3Box
                   </Button>
-                </Tooltip>
-              </Grid>
+                </Tooltip> 
+              </Grid> */}
             </Grid>
           </>
         )}
@@ -309,7 +307,7 @@ function LoadDialog(props) {
               style={{
                 justifyContent: "center",
                 padding: 32,
-                textAlign: "center"
+                textAlign: "center",
               }}
             >
               <Stepper alternativeLabel activeStep={threeBoxConnectionStep}>
@@ -372,7 +370,7 @@ function LoadDialog(props) {
                 onClick={logout}
                 style={{
                   display: "block",
-                  margin: "auto"
+                  margin: "auto",
                 }}
               >
                 Logout
@@ -382,12 +380,12 @@ function LoadDialog(props) {
         )}
         {loadType === "3BOX_LOAD" && (
           <>
-            <div style={{ padding: 32, textAlign: "center" }}>
+            {/* <div style={{ padding: 32, textAlign: "center" }}>
               <Typography variant="button">Load from 3Box</Typography>
               <div style={{ marginTop: 16, marginBottom: 16 }}>
                 <FilesList files={documents} onClick={openFile} />
-              </div>
-              {/* <TextField
+              </div> */}
+            {/* <TextField
               fullWidth
               name="title"
               label="File Name"
@@ -398,7 +396,7 @@ function LoadDialog(props) {
               style={{ marginTop: 16 }}
             /> */}
 
-              {/* <FormControlLabel
+            {/* <FormControlLabel
               control={
                 <Switch
                   checked={publicDocument}
@@ -410,7 +408,7 @@ function LoadDialog(props) {
               label="Public"
             /> */}
 
-              {/* <Typography variant="caption" display="block">
+            {/* <Typography variant="caption" display="block">
               {currentDocumentInfo !== null
                 ? `Last saved ${moment
                     .unix(currentDocumentInfo.metadata.timestamp)
@@ -442,18 +440,18 @@ function LoadDialog(props) {
             >
               Save
             </Button> */}
-              <Link
-                component="button"
-                variant="body2"
-                onClick={logout}
-                style={{
-                  display: "block",
-                  margin: "auto"
-                }}
-              >
-                Logout
-              </Link>
-            </div>
+            <Link
+              component="button"
+              variant="body2"
+              onClick={logout}
+              style={{
+                display: "block",
+                margin: "auto",
+              }}
+            >
+              Logout
+            </Link>
+            {/* </div> */}
           </>
         )}
       </Dialog>
