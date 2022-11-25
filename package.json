@@ -73,7 +73,7 @@
     "winston": "^3.2.1"
   },
   "scripts": {
-    "start": "react-scripts --max_old_space_size=8192 start",
+    "start": "HTTPS=true SSL_CRT_FILE=/etc/letsencrypt/live/sandbox.quanlm1999.tk/fullchain.pem SSL_KEY_FILE=/etc/letsencrypt/live/sandbox.quanlm1999.tk/privkey.pem PORT=443 react-scripts --max_old_space_size=8192 start",
     "build": "react-scripts --max-old-space-size=8192 build ",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
